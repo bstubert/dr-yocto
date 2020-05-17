@@ -7,16 +7,16 @@
 # builds a Docker image with the name "dr-yocto" and the tag "<tag>" ("dr-yocto:<tag>", for
 # short) from the Dockerfile found in <dir-path>. If you are in the parent directory of this
 # file, you can call
-#     ./build.sh zeus ./zeus
-# to build the image "dr-yocto:zeus".
+#     ./build.sh 18.04 ./18.04
+# to build the image "dr-yocto:18.04".
 #
 # The script
 #     run-shell.sh <tag>
 # runs the Docker image "dr-yocto:<tag>" just built. For example,
-#     run-shell.sh zeus
-# runs the Docker image "dr-yocto:zeus".
+#     run-shell.sh 18.04
+# runs the Docker image "dr-yocto:18.04".
 #
-# Note that you can use any string for <tag>. It need not be the code name of a Yocto version.
+# Note that you can use any string for <tag>. It need not be the name of a Ubuntu version.
 
 # Use Ubuntu 18.04 LTS (Bionic Beaver) as the basis for the Docker image.
 FROM ubuntu:18.04
